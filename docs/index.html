@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>景清个人主页</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
-  <div id="app">加载中</div>
+  <div id="app">加载中...</div>
   <script>
     window.$docsify = {
-      name: 'OPGS',
+      name: 'docsify',
       repo: '',
 	  subMaxLevel:3,
 	  copyCode: {
@@ -20,6 +20,7 @@
 		errorText: 'Error',
 		successText: '已复制',
 		},
+	  // 全局搜索配置
 	  search: {
       maxAge: 86400000, // 过期时间，单位毫秒，默认一天
       paths: [], // or 'auto'
@@ -31,12 +32,9 @@
         '/': '请输入搜索内容'
       },
 
-      noData: 'No Results!',
-
       // 支持本地化
       noData: {
-        '/zh-cn/': '找不到结果',
-        '/': 'No Results'
+        '/': '没搜到'
       },
 
       // 搜索标题的最大层级, 1 - 6
